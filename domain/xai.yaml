@@ -1,0 +1,12 @@
+# xAI / Grok
+payload:
+  # xAI 官方主站与企业介绍
+  - DOMAIN-SUFFIX,x.ai # xAI 官方主站门户与研究发布
+
+  # Grok 独立应用与服务
+  - DOMAIN-SUFFIX,grok.com # Grok 独立 Web 端应用主站
+  - DOMAIN-SUFFIX,api.x.ai # xAI Grok API 核心接口
+
+  # Grok 静态资源与图像内容分发 CDN
+  - DOMAIN-SUFFIX,assets.grok.com # Grok 前端静态资源与样式分发 CDN
+  - DOMAIN-SUFFIX,image.grok.com # Grok 生成图片与多媒体内容分发 CDN

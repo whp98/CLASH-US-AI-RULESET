@@ -1,0 +1,4 @@
+# Vercel v0
+payload:
+  # 生成式前端 UI 构建平台
+  - DOMAIN-SUFFIX,v0.dev # Vercel v0 生成式前端界面与 React 组件开发主站

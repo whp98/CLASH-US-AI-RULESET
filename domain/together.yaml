@@ -1,0 +1,9 @@
+# Together AI
+payload:
+  # 官方主站与云平台
+  - DOMAIN-SUFFIX,together.ai # Together AI 云推理与微调官方主站
+  - DOMAIN-SUFFIX,together.xyz # Together 早期门户与文档平台
+
+  # 开发者 API 与推理端点
+  - DOMAIN-SUFFIX,api.together.xyz # Together 开源大语言模型推理 API
+  - DOMAIN-SUFFIX,api.together.ai # Together AI 新版统一 API 端点

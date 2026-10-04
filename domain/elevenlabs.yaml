@@ -1,0 +1,7 @@
+# ElevenLabs
+payload:
+  # 官方主站与语音生成工作台
+  - DOMAIN-SUFFIX,elevenlabs.io # ElevenLabs AI 语音合成与声音克隆官方主站
+
+  # 开发者 API
+  - DOMAIN-SUFFIX,api.elevenlabs.io # ElevenLabs 文本转语音与语音转换 API 接口

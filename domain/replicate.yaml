@@ -1,0 +1,7 @@
+# Replicate
+payload:
+  # 官方主站与云端推理平台
+  - DOMAIN-SUFFIX,replicate.com # Replicate 云端开源大模型运行与微调主站
+
+  # 模型输出分发与媒体资源 CDN
+  - DOMAIN-SUFFIX,replicate.delivery # Replicate 生成结果与模型文件高速下载 CDN

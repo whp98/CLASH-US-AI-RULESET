@@ -1,0 +1,8 @@
+# Suno AI
+payload:
+  # 官方主站与音乐创作平台
+  - DOMAIN-SUFFIX,suno.com # Suno AI 音乐生成主站
+  - DOMAIN-SUFFIX,suno.ai # Suno AI 早期主域与重定向入口
+
+  # 音频流式分发与静态资源 CDN
+  - DOMAIN-SUFFIX,audiocdn.suno.ai # Suno AI 音频生成流式播放与下载 CDN

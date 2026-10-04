@@ -1,0 +1,12 @@
+# Perplexity AI
+payload:
+  # 官方核心主站与短链
+  - DOMAIN-SUFFIX,perplexity.ai # Perplexity AI 搜索与对话核心主站
+  - DOMAIN-SUFFIX,pplx.ai # Perplexity 官方短链与移动端服务
+
+  # 开发者平台与 API
+  - DOMAIN-SUFFIX,api.perplexity.ai # Perplexity AI 开放 API 调用接口
+  - DOMAIN-SUFFIX,labs.perplexity.ai # Perplexity 实验性大模型测试平台 (Playground)
+
+  # 静态资源与加速 CDN
+  - DOMAIN-SUFFIX,cdn.perplexity.ai # Perplexity 前端静态资产加速 CDN

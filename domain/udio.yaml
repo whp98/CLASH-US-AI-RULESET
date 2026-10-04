@@ -1,0 +1,7 @@
+# Udio AI
+payload:
+  # 官方主站与音乐创作 Web 应用
+  - DOMAIN-SUFFIX,udio.com # Udio AI 音乐创作主站与控制台
+
+  # 开发者 API 与音频流式服务
+  - DOMAIN-SUFFIX,api.udio.com # Udio 音频生成与流式传输接口

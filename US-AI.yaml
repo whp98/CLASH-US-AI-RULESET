@@ -1,0 +1,295 @@
+# ==============================================================================
+# Clash Rule-Set: US-AI (全美主流 AI 公司服务规则集)
+# 总计公司分类: 37 个
+# 总计独立规则: 140 条
+# 自动生成工具: merge_rules.py
+# ==============================================================================
+payload:
+
+  # ----------------------------------------------------------------------------
+  # [Amazon AWS AI (Bedrock, Q, PartyRock)] (amazon.yaml) - 共 6 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,q.business.aws # Amazon Q 商业智能助手控制台
+  - DOMAIN-SUFFIX,partyrock.aws # AWS PartyRock 生成式 AI 零代码构建应用平台
+  - DOMAIN,bedrock.us-east-1.amazonaws.com # AWS Bedrock 美东 (弗吉尼亚) 区域推理端点
+  - DOMAIN,bedrock-runtime.us-east-1.amazonaws.com # AWS Bedrock 美东 Runtime 实时调用端点
+  - DOMAIN,bedrock.us-west-2.amazonaws.com # AWS Bedrock 美西 (俄勒冈) 区域推理端点
+  - DOMAIN,bedrock-runtime.us-west-2.amazonaws.com # AWS Bedrock 美西 Runtime 实时调用端点
+
+  # ----------------------------------------------------------------------------
+  # [Anthropic / Claude] (anthropic.yaml) - 共 6 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,anthropic.com # Anthropic 官方网站与企业门户
+  - DOMAIN-SUFFIX,claude.ai # Claude 网页版与移动端对话核心主站
+  - DOMAIN-SUFFIX,claude.usercontent.com # Claude 用户文件上传、生成的 Artifacts 与多媒体内容存储 CDN
+  - DOMAIN-SUFFIX,api.anthropic.com # Claude API 官方接口
+  - DOMAIN-SUFFIX,statsig.anthropic.com # Anthropic 客户端灰度开关与配置下发
+  - DOMAIN-SUFFIX,usefathom.com # Claude 隐私无痕流量分析服务
+
+  # ----------------------------------------------------------------------------
+  # [Cerebras Systems] (cerebras.yaml) - 共 3 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,cerebras.ai # Cerebras 官方网站与晶圆芯片展示
+  - DOMAIN-SUFFIX,cloud.cerebras.ai # Cerebras Cloud 开发者平台
+  - DOMAIN-SUFFIX,inference.cerebras.ai # Cerebras 超高速大模型推理 API
+
+  # ----------------------------------------------------------------------------
+  # [Character.AI] (characterai.yaml) - 共 3 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,character.ai # Character.AI 智能体对话核心主站
+  - DOMAIN-SUFFIX,characterai.io # Character.AI 基础支撑与通信服务域名
+  - DOMAIN-SUFFIX,beta.character.ai # Character.AI 测试版 Web 入口
+
+  # ----------------------------------------------------------------------------
+  # [OpenAI / ChatGPT] (chatgpt.yaml) - 共 17 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,chatgpt.com # ChatGPT 网页端主站及服务
+  - DOMAIN-SUFFIX,openai.com # OpenAI 官方主站及企业服务
+  - DOMAIN-SUFFIX,sora.com # OpenAI Sora 视频生成主站
+  - DOMAIN-SUFFIX,chat.openai.com # ChatGPT 早期网页端入口
+  - DOMAIN-SUFFIX,api.openai.com # OpenAI 核心 API 调用接口
+  - DOMAIN-SUFFIX,platform.openai.com # OpenAI 开发者后台及控制台
+  - DOMAIN-SUFFIX,oaistatic.com # ChatGPT 前端静态资源与样式分发 CDN
+  - DOMAIN-SUFFIX,oaiusercontent.com # ChatGPT 用户上传图片、文件及 DALL-E/Sora 生成内容存储 CDN
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net # OpenAI 微软 Azure 边缘加速 CDN
+  - DOMAIN-SUFFIX,auth0.openai.com # OpenAI 统一身份鉴权服务
+  - DOMAIN-SUFFIX,chatgpt.livekit.cloud # ChatGPT 语音高级实时交互服务 (LiveKit)
+  - DOMAIN-SUFFIX,operator.chatgpt.com # OpenAI Operator 智能体代理服务
+  - DOMAIN-SUFFIX,help.openai.com # OpenAI 官方帮助中心与客服系统
+  - DOMAIN-SUFFIX,openailabs.com # OpenAI 早期实验性项目域名
+  - DOMAIN-SUFFIX,featuregates.org # OpenAI 客户端功能开关与灰度测试 (Statsig)
+  - DOMAIN-SUFFIX,statsigapi.net # OpenAI 客户端事件遥测与统计分析
+  - DOMAIN-SUFFIX,browser-intake-datadoghq.com # ChatGPT 前端异常日志与性能监控 (Datadog)
+
+  # ----------------------------------------------------------------------------
+  # [Civitai] (civitai.yaml) - 共 2 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,civitai.com # Civitai 开源 AI 绘图模型分享社区与在线生图
+  - DOMAIN-SUFFIX,civitai.work # Civitai 后台任务生成与工作流节点域名
+
+  # ----------------------------------------------------------------------------
+  # [Cohere] (cohere.yaml) - 共 4 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,cohere.com # Cohere 企业级大模型官方门户
+  - DOMAIN-SUFFIX,cohere.ai # Cohere 早期主域与重定向入口
+  - DOMAIN-SUFFIX,api.cohere.ai # Cohere 生成与嵌入模型 API 核心调用接口
+  - DOMAIN-SUFFIX,dashboard.cohere.com # Cohere 开发者控制台与密钥管理
+
+  # ----------------------------------------------------------------------------
+  # [Cursor (Anysphere)] (cursor.yaml) - 共 5 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,cursor.com # Cursor AI 代码编辑器官方网站
+  - DOMAIN-SUFFIX,cursor.sh # Cursor 早期主域名与核心后端接口
+  - DOMAIN-SUFFIX,api2.cursor.sh # Cursor 核心代码生成与补全 API
+  - DOMAIN-SUFFIX,repo42.cursor.sh # Cursor 远程代码仓库语义索引与嵌入向量检索
+  - DOMAIN-SUFFIX,download.todesktop.com # Cursor 桌面客户端安装包下载与更新 CDN
+
+  # ----------------------------------------------------------------------------
+  # [Descript] (descript.yaml) - 共 1 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,descript.com # Descript AI 音频视频转录与编辑主站
+
+  # ----------------------------------------------------------------------------
+  # [ElevenLabs] (elevenlabs.yaml) - 共 2 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,elevenlabs.io # ElevenLabs AI 语音合成与声音克隆官方主站
+  - DOMAIN-SUFFIX,api.elevenlabs.io # ElevenLabs 文本转语音与语音转换 API 接口
+
+  # ----------------------------------------------------------------------------
+  # [Google AI (Gemini, DeepMind, AI Studio, NotebookLM)] (google.yaml) - 共 15 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN,gemini.google.com # Google Gemini 网页端主应用
+  - DOMAIN,bard.google.com # Google Bard 旧版重定向入口
+  - DOMAIN-SUFFIX,deepmind.com # Google DeepMind 官方主站
+  - DOMAIN-SUFFIX,deepmind.google # Google DeepMind 顶级域名门户
+  - DOMAIN,ai.google.dev # Google AI 开发者平台与文档
+  - DOMAIN,aistudio.google.com # Google AI Studio 开发调试工作台
+  - DOMAIN,makersuite.google.com # MakerSuite 原型开发平台 (AI Studio 前身)
+  - DOMAIN,generativelanguage.googleapis.com # Gemini API 核心生成式语言接口
+  - DOMAIN,notebooklm.google # Google NotebookLM 独立主域
+  - DOMAIN,notebooklm.google.com # Google NotebookLM 网页版应用
+  - DOMAIN,proactivebackend-pa.googleapis.com # Gemini 移动端与主动式助手后端服务
+  - DOMAIN,geller-pa.googleapis.com # Gemini 上下文理解与检索服务
+  - DOMAIN,alkalimakersuite-pa.clients6.google.com # AI Studio 后端专用 API
+  - DOMAIN,content-push.googleapis.com # Gemini 实时内容流式推送服务
+  - DOMAIN,waa-pa.clients6.google.com # Google Web Assistant 网页端 AI 辅助服务
+
+  # ----------------------------------------------------------------------------
+  # [Groq] (groq.yaml) - 共 3 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,groq.com # Groq 官方主站与 LPU 芯片架构介绍
+  - DOMAIN-SUFFIX,console.groq.com # GroqCloud 开发者控制台与密钥管理
+  - DOMAIN-SUFFIX,api.groq.com # GroqCloud 超高速开源模型推理 API 接口
+
+  # ----------------------------------------------------------------------------
+  # [Harvey AI] (harvey.yaml) - 共 1 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,harvey.ai # Harvey 法律领域专业大模型服务主站
+
+  # ----------------------------------------------------------------------------
+  # [HeyGen] (heygen.yaml) - 共 3 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,heygen.com # HeyGen AI 数字人与视频翻译创作平台
+  - DOMAIN-SUFFIX,heygen.ai # HeyGen 重定向与相关应用服务
+  - DOMAIN-SUFFIX,api.heygen.com # HeyGen 数字人视频生成 API 接口
+
+  # ----------------------------------------------------------------------------
+  # [Hugging Face] (huggingface.yaml) - 共 3 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,huggingface.co # Hugging Face 模型、数据集与开源社区主站
+  - DOMAIN-SUFFIX,hf.space # Hugging Face Spaces 在线 AI 应用托管服务
+  - DOMAIN-SUFFIX,hf.co # Hugging Face 官方短域名与模型权重下载加速入口
+
+  # ----------------------------------------------------------------------------
+  # [Inflection AI / Pi] (inflection.yaml) - 共 2 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,pi.ai # Pi 对话式 AI 助手主站
+  - DOMAIN-SUFFIX,inflection.ai # Inflection AI 企业官方主站
+
+  # ----------------------------------------------------------------------------
+  # [Jasper AI] (jasper.yaml) - 共 2 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,jasper.ai # Jasper AI 营销内容与文案创作主站
+  - DOMAIN-SUFFIX,api.jasper.ai # Jasper API 接口服务
+
+  # ----------------------------------------------------------------------------
+  # [Krea AI] (krea.yaml) - 共 2 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,krea.ai # Krea 实时 AI 图像与视频生成平台
+  - DOMAIN-SUFFIX,api.krea.ai # Krea 实时交互与模型调用接口
+
+  # ----------------------------------------------------------------------------
+  # [Luma AI (Dream Machine)] (luma.yaml) - 共 2 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,lumalabs.ai # Luma AI 视频与 3D 生成官方主站
+  - DOMAIN-SUFFIX,cdn.lumalabs.ai # Luma 生成视频与多媒体素材 CDN
+
+  # ----------------------------------------------------------------------------
+  # [Meta AI (LLaMA, Imagine)] (meta.yaml) - 共 4 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,meta.ai # Meta AI 助手独立 Web 端主站
+  - DOMAIN-SUFFIX,imagine.meta.com # Meta AI 独立图像生成工具 (Imagine with Meta AI)
+  - DOMAIN-SUFFIX,ai.meta.com # Meta AI 研究院与开源生态门户
+  - DOMAIN-SUFFIX,llama.meta.com # Meta LLaMA 系列大模型官方门户
+
+  # ----------------------------------------------------------------------------
+  # [Microsoft AI (Copilot, Bing AI, GitHub Copilot, Designer)] (microsoft.yaml) - 共 10 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,copilot.microsoft.com # Microsoft Copilot 独立 Web 端应用
+  - DOMAIN-SUFFIX,copilot.cloud.microsoft # Microsoft 365 Copilot 企业云端统一入口
+  - DOMAIN,sydney.bing.com # Bing Copilot 核心对话与推理后端接口
+  - DOMAIN,edgeservices.bing.com # Edge 浏览器内置 Copilot 侧边栏与上下文服务
+  - DOMAIN-SUFFIX,bingapis.com # Bing AI 搜索与知识图谱增强接口
+  - DOMAIN-SUFFIX,designer.microsoft.com # Microsoft Designer AI 图像生成与设计平台
+  - DOMAIN,api.githubcopilot.com # GitHub Copilot 核心代码补全与聊天 API
+  - DOMAIN,copilot-proxy.githubusercontent.com # GitHub Copilot 代理转发与流式数据中转服务
+  - DOMAIN,origin-tracker.githubusercontent.com # GitHub Copilot 代码引用源追溯服务
+  - DOMAIN,copilot-staging.github.com # GitHub Copilot 预发布与测试服务接口
+
+  # ----------------------------------------------------------------------------
+  # [Midjourney] (midjourney.yaml) - 共 3 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,midjourney.com # Midjourney 官方主站与账号中心
+  - DOMAIN-SUFFIX,alpha.midjourney.com # Midjourney Alpha 网页版图像生成控制台
+  - DOMAIN-SUFFIX,cdn.midjourney.com # Midjourney 生成图片与素材分发 CDN
+
+  # ----------------------------------------------------------------------------
+  # [Perplexity AI] (perplexity.yaml) - 共 5 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,perplexity.ai # Perplexity AI 搜索与对话核心主站
+  - DOMAIN-SUFFIX,pplx.ai # Perplexity 官方短链与移动端服务
+  - DOMAIN-SUFFIX,api.perplexity.ai # Perplexity AI 开放 API 调用接口
+  - DOMAIN-SUFFIX,labs.perplexity.ai # Perplexity 实验性大模型测试平台 (Playground)
+  - DOMAIN-SUFFIX,cdn.perplexity.ai # Perplexity 前端静态资产加速 CDN
+
+  # ----------------------------------------------------------------------------
+  # [Phind] (phind.yaml) - 共 1 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,phind.com # Phind 开发者专业 AI 搜索引擎与代码调试
+
+  # ----------------------------------------------------------------------------
+  # [Pika AI] (pika.yaml) - 共 2 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,pika.art # Pika AI 视频创作核心主站
+  - DOMAIN-SUFFIX,api.pika.art # Pika 视频生成与渲染后端接口
+
+  # ----------------------------------------------------------------------------
+  # [Pinecone AI] (pinecone.yaml) - 共 2 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,pinecone.io # Pinecone 向量数据库与大模型知识库服务
+  - DOMAIN-SUFFIX,app.pinecone.io # Pinecone 控制台与索引管理后台
+
+  # ----------------------------------------------------------------------------
+  # [Poe (Quora)] (poe.yaml) - 共 2 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,poe.com # Poe AI 聚合对话平台官方主站
+  - DOMAIN-SUFFIX,quoracdn.net # Quora 及 Poe 静态资源加速 CDN
+
+  # ----------------------------------------------------------------------------
+  # [Replicate] (replicate.yaml) - 共 2 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,replicate.com # Replicate 云端开源大模型运行与微调主站
+  - DOMAIN-SUFFIX,replicate.delivery # Replicate 生成结果与模型文件高速下载 CDN
+
+  # ----------------------------------------------------------------------------
+  # [Runway AI] (runway.yaml) - 共 4 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,runway.com # Runway 新版官方主站
+  - DOMAIN-SUFFIX,runwayml.com # RunwayML 视频与视觉 AI 生成主站
+  - DOMAIN-SUFFIX,app.runwayml.com # Runway 在线视频编辑与生成工作室
+  - DOMAIN-SUFFIX,api.runwayml.com # Runway 视频生成开放 API
+
+  # ----------------------------------------------------------------------------
+  # [Scale AI] (scale.yaml) - 共 2 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,scale.com # Scale AI 数据标注与模型评估主站
+  - DOMAIN-SUFFIX,dashboard.scale.com # Scale AI 企业控制台
+
+  # ----------------------------------------------------------------------------
+  # [Stability AI] (stability.yaml) - 共 3 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,stability.ai # Stability AI 官方门户与研究发布
+  - DOMAIN-SUFFIX,dreamstudio.ai # DreamStudio (Stable Diffusion 官方生图平台)
+  - DOMAIN-SUFFIX,clipdrop.co # Clipdrop AI 图像编辑与处理工具
+
+  # ----------------------------------------------------------------------------
+  # [Suno AI] (suno.yaml) - 共 3 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,suno.com # Suno AI 音乐生成主站
+  - DOMAIN-SUFFIX,suno.ai # Suno AI 早期主域与重定向入口
+  - DOMAIN-SUFFIX,audiocdn.suno.ai # Suno AI 音频生成流式播放与下载 CDN
+
+  # ----------------------------------------------------------------------------
+  # [Together AI] (together.yaml) - 共 4 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,together.ai # Together AI 云推理与微调官方主站
+  - DOMAIN-SUFFIX,together.xyz # Together 早期门户与文档平台
+  - DOMAIN-SUFFIX,api.together.xyz # Together 开源大语言模型推理 API
+  - DOMAIN-SUFFIX,api.together.ai # Together AI 新版统一 API 端点
+
+  # ----------------------------------------------------------------------------
+  # [Udio AI] (udio.yaml) - 共 2 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,udio.com # Udio AI 音乐创作主站与控制台
+  - DOMAIN-SUFFIX,api.udio.com # Udio 音频生成与流式传输接口
+
+  # ----------------------------------------------------------------------------
+  # [Vercel v0] (v0.yaml) - 共 1 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,v0.dev # Vercel v0 生成式前端界面与 React 组件开发主站
+
+  # ----------------------------------------------------------------------------
+  # [Weights & Biases (W&B)] (wandb.yaml) - 共 3 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,wandb.ai # Weights & Biases 机器学习与大模型训练监控平台
+  - DOMAIN-SUFFIX,wandb.com # W&B 官方门户
+  - DOMAIN-SUFFIX,api.wandb.ai # W&B 实验数据上报与指标记录接口
+
+  # ----------------------------------------------------------------------------
+  # [xAI / Grok] (xai.yaml) - 共 5 条规则
+  # ----------------------------------------------------------------------------
+  - DOMAIN-SUFFIX,x.ai # xAI 官方主站门户与研究发布
+  - DOMAIN-SUFFIX,grok.com # Grok 独立 Web 端应用主站
+  - DOMAIN-SUFFIX,api.x.ai # xAI Grok API 核心接口
+  - DOMAIN-SUFFIX,assets.grok.com # Grok 前端静态资源与样式分发 CDN
+  - DOMAIN-SUFFIX,image.grok.com # Grok 生成图片与多媒体内容分发 CDN

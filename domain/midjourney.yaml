@@ -1,0 +1,8 @@
+# Midjourney
+payload:
+  # 官方主站与网页版生成应用
+  - DOMAIN-SUFFIX,midjourney.com # Midjourney 官方主站与账号中心
+  - DOMAIN-SUFFIX,alpha.midjourney.com # Midjourney Alpha 网页版图像生成控制台
+
+  # 图像内容与多媒体资产 CDN
+  - DOMAIN-SUFFIX,cdn.midjourney.com # Midjourney 生成图片与素材分发 CDN

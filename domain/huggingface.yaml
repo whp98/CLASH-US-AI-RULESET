@@ -1,0 +1,10 @@
+# Hugging Face
+payload:
+  # 官方核心主站、模型库与数据集
+  - DOMAIN-SUFFIX,huggingface.co # Hugging Face 模型、数据集与开源社区主站
+
+  # Spaces 在线应用托管与部署
+  - DOMAIN-SUFFIX,hf.space # Hugging Face Spaces 在线 AI 应用托管服务
+
+  # 官方短链与权重下载加速服务
+  - DOMAIN-SUFFIX,hf.co # Hugging Face 官方短域名与模型权重下载加速入口

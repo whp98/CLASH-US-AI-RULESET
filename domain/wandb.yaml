@@ -1,0 +1,6 @@
+# Weights & Biases (W&B)
+payload:
+  # 官方主站与大模型训练看板
+  - DOMAIN-SUFFIX,wandb.ai # Weights & Biases 机器学习与大模型训练监控平台
+  - DOMAIN-SUFFIX,wandb.com # W&B 官方门户
+  - DOMAIN-SUFFIX,api.wandb.ai # W&B 实验数据上报与指标记录接口

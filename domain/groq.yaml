@@ -1,0 +1,8 @@
+# Groq
+payload:
+  # 官方主站与极速 LPU 推理平台
+  - DOMAIN-SUFFIX,groq.com # Groq 官方主站与 LPU 芯片架构介绍
+
+  # 云端控制台与高速推理 API
+  - DOMAIN-SUFFIX,console.groq.com # GroqCloud 开发者控制台与密钥管理
+  - DOMAIN-SUFFIX,api.groq.com # GroqCloud 超高速开源模型推理 API 接口

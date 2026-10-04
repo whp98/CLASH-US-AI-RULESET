@@ -1,0 +1,7 @@
+# Krea AI
+payload:
+  # 官方主站与实时生图画布
+  - DOMAIN-SUFFIX,krea.ai # Krea 实时 AI 图像与视频生成平台
+
+  # 服务端 API
+  - DOMAIN-SUFFIX,api.krea.ai # Krea 实时交互与模型调用接口

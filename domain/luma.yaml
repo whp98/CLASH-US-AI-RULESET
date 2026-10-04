@@ -1,0 +1,7 @@
+# Luma AI (Dream Machine)
+payload:
+  # 官方主站与 Dream Machine 视频生成平台
+  - DOMAIN-SUFFIX,lumalabs.ai # Luma AI 视频与 3D 生成官方主站
+
+  # 媒体内容分发与静态资源 CDN
+  - DOMAIN-SUFFIX,cdn.lumalabs.ai # Luma 生成视频与多媒体素材 CDN

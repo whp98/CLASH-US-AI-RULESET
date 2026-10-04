@@ -1,0 +1,26 @@
+# Google AI (Gemini, DeepMind, AI Studio, NotebookLM)
+payload:
+  # Gemini 与 Bard 网页端
+  - DOMAIN,gemini.google.com # Google Gemini 网页端主应用
+  - DOMAIN,bard.google.com # Google Bard 旧版重定向入口
+
+  # Google DeepMind
+  - DOMAIN-SUFFIX,deepmind.com # Google DeepMind 官方主站
+  - DOMAIN-SUFFIX,deepmind.google # Google DeepMind 顶级域名门户
+
+  # 开发者平台与 API
+  - DOMAIN,ai.google.dev # Google AI 开发者平台与文档
+  - DOMAIN,aistudio.google.com # Google AI Studio 开发调试工作台
+  - DOMAIN,makersuite.google.com # MakerSuite 原型开发平台 (AI Studio 前身)
+  - DOMAIN,generativelanguage.googleapis.com # Gemini API 核心生成式语言接口
+
+  # NotebookLM (知识库与播客生成)
+  - DOMAIN,notebooklm.google # Google NotebookLM 独立主域
+  - DOMAIN,notebooklm.google.com # Google NotebookLM 网页版应用
+
+  # 后端服务、模型流式输出与主动式推送
+  - DOMAIN,proactivebackend-pa.googleapis.com # Gemini 移动端与主动式助手后端服务
+  - DOMAIN,geller-pa.googleapis.com # Gemini 上下文理解与检索服务
+  - DOMAIN,alkalimakersuite-pa.clients6.google.com # AI Studio 后端专用 API
+  - DOMAIN,content-push.googleapis.com # Gemini 实时内容流式推送服务
+  - DOMAIN,waa-pa.clients6.google.com # Google Web Assistant 网页端 AI 辅助服务

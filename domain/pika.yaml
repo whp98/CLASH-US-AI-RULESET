@@ -1,0 +1,7 @@
+# Pika AI
+payload:
+  # 官方主站与视频创作平台
+  - DOMAIN-SUFFIX,pika.art # Pika AI 视频创作核心主站
+
+  # 接口与服务端点
+  - DOMAIN-SUFFIX,api.pika.art # Pika 视频生成与渲染后端接口

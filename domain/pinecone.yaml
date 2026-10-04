@@ -1,0 +1,5 @@
+# Pinecone AI
+payload:
+  # 官方主站与向量数据库平台
+  - DOMAIN-SUFFIX,pinecone.io # Pinecone 向量数据库与大模型知识库服务
+  - DOMAIN-SUFFIX,app.pinecone.io # Pinecone 控制台与索引管理后台

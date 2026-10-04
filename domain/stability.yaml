@@ -1,0 +1,8 @@
+# Stability AI
+payload:
+  # 官方主站与企业门户
+  - DOMAIN-SUFFIX,stability.ai # Stability AI 官方门户与研究发布
+
+  # DreamStudio 与生图平台
+  - DOMAIN-SUFFIX,dreamstudio.ai # DreamStudio (Stable Diffusion 官方生图平台)
+  - DOMAIN-SUFFIX,clipdrop.co # Clipdrop AI 图像编辑与处理工具

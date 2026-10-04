@@ -1,0 +1,6 @@
+# Character.AI
+payload:
+  # 官方核心主站与对话平台
+  - DOMAIN-SUFFIX,character.ai # Character.AI 智能体对话核心主站
+  - DOMAIN-SUFFIX,characterai.io # Character.AI 基础支撑与通信服务域名
+  - DOMAIN-SUFFIX,beta.character.ai # Character.AI 测试版 Web 入口

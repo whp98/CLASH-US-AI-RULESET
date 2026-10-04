@@ -1,0 +1,5 @@
+# Scale AI
+payload:
+  # 官方主站与数据标注平台
+  - DOMAIN-SUFFIX,scale.com # Scale AI 数据标注与模型评估主站
+  - DOMAIN-SUFFIX,dashboard.scale.com # Scale AI 企业控制台

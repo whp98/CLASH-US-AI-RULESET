@@ -1,0 +1,5 @@
+# Inflection AI / Pi
+payload:
+  # 官方主站与情感陪伴 AI 助手
+  - DOMAIN-SUFFIX,pi.ai # Pi 对话式 AI 助手主站
+  - DOMAIN-SUFFIX,inflection.ai # Inflection AI 企业官方主站

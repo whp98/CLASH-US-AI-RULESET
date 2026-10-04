@@ -1,0 +1,5 @@
+# Jasper AI
+payload:
+  # 官方主站与营销内容创作平台
+  - DOMAIN-SUFFIX,jasper.ai # Jasper AI 营销内容与文案创作主站
+  - DOMAIN-SUFFIX,api.jasper.ai # Jasper API 接口服务

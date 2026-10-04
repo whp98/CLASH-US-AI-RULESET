@@ -1,0 +1,6 @@
+# Cerebras Systems
+payload:
+  # 官方主站与晶圆级芯片推理服务
+  - DOMAIN-SUFFIX,cerebras.ai # Cerebras 官方网站与晶圆芯片展示
+  - DOMAIN-SUFFIX,cloud.cerebras.ai # Cerebras Cloud 开发者平台
+  - DOMAIN-SUFFIX,inference.cerebras.ai # Cerebras 超高速大模型推理 API

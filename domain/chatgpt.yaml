@@ -1,0 +1,28 @@
+# OpenAI / ChatGPT
+payload:
+  # 官方核心主站及 Web 应用
+  - DOMAIN-SUFFIX,chatgpt.com # ChatGPT 网页端主站及服务
+  - DOMAIN-SUFFIX,openai.com # OpenAI 官方主站及企业服务
+  - DOMAIN-SUFFIX,sora.com # OpenAI Sora 视频生成主站
+  - DOMAIN-SUFFIX,chat.openai.com # ChatGPT 早期网页端入口
+
+  # 开发者 API 与开放平台
+  - DOMAIN-SUFFIX,api.openai.com # OpenAI 核心 API 调用接口
+  - DOMAIN-SUFFIX,platform.openai.com # OpenAI 开发者后台及控制台
+
+  # 静态资源、CDN 与多媒体文件存储
+  - DOMAIN-SUFFIX,oaistatic.com # ChatGPT 前端静态资源与样式分发 CDN
+  - DOMAIN-SUFFIX,oaiusercontent.com # ChatGPT 用户上传图片、文件及 DALL-E/Sora 生成内容存储 CDN
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net # OpenAI 微软 Azure 边缘加速 CDN
+
+  # 认证、辅助与实时交互服务
+  - DOMAIN-SUFFIX,auth0.openai.com # OpenAI 统一身份鉴权服务
+  - DOMAIN-SUFFIX,chatgpt.livekit.cloud # ChatGPT 语音高级实时交互服务 (LiveKit)
+  - DOMAIN-SUFFIX,operator.chatgpt.com # OpenAI Operator 智能体代理服务
+  - DOMAIN-SUFFIX,help.openai.com # OpenAI 官方帮助中心与客服系统
+  - DOMAIN-SUFFIX,openailabs.com # OpenAI 早期实验性项目域名
+
+  # 遥测、灰度发布与监控 (客户端运行依赖)
+  - DOMAIN-SUFFIX,featuregates.org # OpenAI 客户端功能开关与灰度测试 (Statsig)
+  - DOMAIN-SUFFIX,statsigapi.net # OpenAI 客户端事件遥测与统计分析
+  - DOMAIN-SUFFIX,browser-intake-datadoghq.com # ChatGPT 前端异常日志与性能监控 (Datadog)

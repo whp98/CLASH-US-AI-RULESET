@@ -1,0 +1,9 @@
+# Cohere
+payload:
+  # 官方主站与企业门户
+  - DOMAIN-SUFFIX,cohere.com # Cohere 企业级大模型官方门户
+  - DOMAIN-SUFFIX,cohere.ai # Cohere 早期主域与重定向入口
+
+  # 开发者 API 与控制台
+  - DOMAIN-SUFFIX,api.cohere.ai # Cohere 生成与嵌入模型 API 核心调用接口
+  - DOMAIN-SUFFIX,dashboard.cohere.com # Cohere 开发者控制台与密钥管理

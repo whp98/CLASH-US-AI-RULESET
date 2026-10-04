@@ -1,0 +1,12 @@
+# Cursor (Anysphere)
+payload:
+  # 官方主站与门户
+  - DOMAIN-SUFFIX,cursor.com # Cursor AI 代码编辑器官方网站
+  - DOMAIN-SUFFIX,cursor.sh # Cursor 早期主域名与核心后端接口
+
+  # 后端补全 API 与代码库语义索引
+  - DOMAIN-SUFFIX,api2.cursor.sh # Cursor 核心代码生成与补全 API
+  - DOMAIN-SUFFIX,repo42.cursor.sh # Cursor 远程代码仓库语义索引与嵌入向量检索
+
+  # 客户端安装分发与更新
+  - DOMAIN-SUFFIX,download.todesktop.com # Cursor 桌面客户端安装包下载与更新 CDN

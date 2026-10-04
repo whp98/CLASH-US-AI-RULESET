@@ -1,0 +1,6 @@
+# HeyGen
+payload:
+  # 官方主站与数字人视频创作平台
+  - DOMAIN-SUFFIX,heygen.com # HeyGen AI 数字人与视频翻译创作平台
+  - DOMAIN-SUFFIX,heygen.ai # HeyGen 重定向与相关应用服务
+  - DOMAIN-SUFFIX,api.heygen.com # HeyGen 数字人视频生成 API 接口

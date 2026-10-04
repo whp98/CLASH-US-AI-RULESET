@@ -1,0 +1,5 @@
+# Civitai
+payload:
+  # 官方主站与模型社区
+  - DOMAIN-SUFFIX,civitai.com # Civitai 开源 AI 绘图模型分享社区与在线生图
+  - DOMAIN-SUFFIX,civitai.work # Civitai 后台任务生成与工作流节点域名

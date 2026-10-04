@@ -1,0 +1,9 @@
+# Meta AI (LLaMA, Imagine)
+payload:
+  # Meta AI 助手主站与文生图服务
+  - DOMAIN-SUFFIX,meta.ai # Meta AI 助手独立 Web 端主站
+  - DOMAIN-SUFFIX,imagine.meta.com # Meta AI 独立图像生成工具 (Imagine with Meta AI)
+
+  # Meta AI 研究门户与开源模型
+  - DOMAIN-SUFFIX,ai.meta.com # Meta AI 研究院与开源生态门户
+  - DOMAIN-SUFFIX,llama.meta.com # Meta LLaMA 系列大模型官方门户

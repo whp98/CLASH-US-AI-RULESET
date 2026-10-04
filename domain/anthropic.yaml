@@ -1,0 +1,15 @@
+# Anthropic / Claude
+payload:
+  # 官方主站与企业门户
+  - DOMAIN-SUFFIX,anthropic.com # Anthropic 官方网站与企业门户
+
+  # Claude 网页与移动端服务
+  - DOMAIN-SUFFIX,claude.ai # Claude 网页版与移动端对话核心主站
+  - DOMAIN-SUFFIX,claude.usercontent.com # Claude 用户文件上传、生成的 Artifacts 与多媒体内容存储 CDN
+
+  # 开发者 API 接口
+  - DOMAIN-SUFFIX,api.anthropic.com # Claude API 官方接口
+
+  # 客户端遥测、合规与数据上报
+  - DOMAIN-SUFFIX,statsig.anthropic.com # Anthropic 客户端灰度开关与配置下发
+  - DOMAIN-SUFFIX,usefathom.com # Claude 隐私无痕流量分析服务

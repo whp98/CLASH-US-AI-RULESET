@@ -1,0 +1,13 @@
+# Amazon AWS AI (Bedrock, Q, PartyRock)
+payload:
+  # Amazon Q 智能工作助手
+  - DOMAIN-SUFFIX,q.business.aws # Amazon Q 商业智能助手控制台
+
+  # AWS PartyRock 生成式 AI 体验场
+  - DOMAIN-SUFFIX,partyrock.aws # AWS PartyRock 生成式 AI 零代码构建应用平台
+
+  # AWS Bedrock 大模型托管服务接口
+  - DOMAIN,bedrock.us-east-1.amazonaws.com # AWS Bedrock 美东 (弗吉尼亚) 区域推理端点
+  - DOMAIN,bedrock-runtime.us-east-1.amazonaws.com # AWS Bedrock 美东 Runtime 实时调用端点
+  - DOMAIN,bedrock.us-west-2.amazonaws.com # AWS Bedrock 美西 (俄勒冈) 区域推理端点
+  - DOMAIN,bedrock-runtime.us-west-2.amazonaws.com # AWS Bedrock 美西 Runtime 实时调用端点

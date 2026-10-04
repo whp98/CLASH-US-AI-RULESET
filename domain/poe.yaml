@@ -1,0 +1,7 @@
+# Poe (Quora)
+payload:
+  # 官方主站与多模型聚合服务
+  - DOMAIN-SUFFIX,poe.com # Poe AI 聚合对话平台官方主站
+
+  # 静态资源与加速 CDN
+  - DOMAIN-SUFFIX,quoracdn.net # Quora 及 Poe 静态资源加速 CDN

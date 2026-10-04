@@ -1,0 +1,19 @@
+# Microsoft AI (Copilot, Bing AI, GitHub Copilot, Designer)
+payload:
+  # Microsoft Copilot 主站与云端服务
+  - DOMAIN-SUFFIX,copilot.microsoft.com # Microsoft Copilot 独立 Web 端应用
+  - DOMAIN-SUFFIX,copilot.cloud.microsoft # Microsoft 365 Copilot 企业云端统一入口
+
+  # Bing AI (Sydney) 交互接口
+  - DOMAIN,sydney.bing.com # Bing Copilot 核心对话与推理后端接口
+  - DOMAIN,edgeservices.bing.com # Edge 浏览器内置 Copilot 侧边栏与上下文服务
+  - DOMAIN-SUFFIX,bingapis.com # Bing AI 搜索与知识图谱增强接口
+
+  # Microsoft Designer AI 图像生成与设计
+  - DOMAIN-SUFFIX,designer.microsoft.com # Microsoft Designer AI 图像生成与设计平台
+
+  # GitHub Copilot 代码助手服务
+  - DOMAIN,api.githubcopilot.com # GitHub Copilot 核心代码补全与聊天 API
+  - DOMAIN,copilot-proxy.githubusercontent.com # GitHub Copilot 代理转发与流式数据中转服务
+  - DOMAIN,origin-tracker.githubusercontent.com # GitHub Copilot 代码引用源追溯服务
+  - DOMAIN,copilot-staging.github.com # GitHub Copilot 预发布与测试服务接口

@@ -1,0 +1,7 @@
+# Runway AI
+payload:
+  # 官方主站与视频生成平台
+  - DOMAIN-SUFFIX,runway.com # Runway 新版官方主站
+  - DOMAIN-SUFFIX,runwayml.com # RunwayML 视频与视觉 AI 生成主站
+  - DOMAIN-SUFFIX,app.runwayml.com # Runway 在线视频编辑与生成工作室
+  - DOMAIN-SUFFIX,api.runwayml.com # Runway 视频生成开放 API
