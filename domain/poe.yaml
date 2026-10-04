@@ -5,3 +5,6 @@ payload:
 
   # 静态资源与加速 CDN
   - DOMAIN-SUFFIX,quoracdn.net # Quora 及 Poe 静态资源加速 CDN
+
+  # 客户端 App 包名
+  - PROCESS-NAME,com.quora.poe # Poe 官方 Android App 包名

@@ -5,3 +5,6 @@ payload:
 
   # 开发者 API
   - DOMAIN-SUFFIX,api.elevenlabs.io # ElevenLabs 文本转语音与语音转换 API 接口
+
+  # 客户端 App 包名
+  - PROCESS-NAME,io.elevenlabs.readerapp # ElevenLabs Reader 官方 Android App 包名

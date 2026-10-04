@@ -10,3 +10,6 @@ payload:
 
   # 客户端安装分发与更新
   - DOMAIN-SUFFIX,download.todesktop.com # Cursor 桌面客户端安装包下载与更新 CDN
+
+  # 客户端进程名
+  - PROCESS-NAME,Cursor # Cursor AI 编辑器桌面端进程名

@@ -10,3 +10,7 @@ payload:
 
   # 静态资源与加速 CDN
   - DOMAIN-SUFFIX,cdn.perplexity.ai # Perplexity 前端静态资产加速 CDN
+
+  # 客户端 App 包名与进程名
+  - PROCESS-NAME,ai.perplexity.app.android # Perplexity 官方 Android App 包名
+  - PROCESS-NAME,Perplexity # Perplexity 官方桌面端应用进程名

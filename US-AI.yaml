@@ -1,7 +1,7 @@
 # ==============================================================================
 # Clash Rule-Set: US-AI (全美主流 AI 公司服务规则集)
 # 总计公司分类: 37 个
-# 总计独立规则: 140 条
+# 总计独立规则: 163 条
 # 自动生成工具: merge_rules.py
 # ==============================================================================
 payload:
@@ -17,7 +17,7 @@ payload:
   - DOMAIN,bedrock-runtime.us-west-2.amazonaws.com # AWS Bedrock 美西 Runtime 实时调用端点
 
   # ----------------------------------------------------------------------------
-  # [Anthropic / Claude] (anthropic.yaml) - 共 6 条规则
+  # [Anthropic / Claude] (anthropic.yaml) - 共 8 条规则
   # ----------------------------------------------------------------------------
   - DOMAIN-SUFFIX,anthropic.com # Anthropic 官方网站与企业门户
   - DOMAIN-SUFFIX,claude.ai # Claude 网页版与移动端对话核心主站
@@ -25,6 +25,8 @@ payload:
   - DOMAIN-SUFFIX,api.anthropic.com # Claude API 官方接口
   - DOMAIN-SUFFIX,statsig.anthropic.com # Anthropic 客户端灰度开关与配置下发
   - DOMAIN-SUFFIX,usefathom.com # Claude 隐私无痕流量分析服务
+  - PROCESS-NAME,com.anthropic.claude # Claude 官方 Android App 包名
+  - PROCESS-NAME,Claude # Claude 官方桌面端应用进程名
 
   # ----------------------------------------------------------------------------
   # [Cerebras Systems] (cerebras.yaml) - 共 3 条规则
@@ -34,14 +36,15 @@ payload:
   - DOMAIN-SUFFIX,inference.cerebras.ai # Cerebras 超高速大模型推理 API
 
   # ----------------------------------------------------------------------------
-  # [Character.AI] (characterai.yaml) - 共 3 条规则
+  # [Character.AI] (characterai.yaml) - 共 4 条规则
   # ----------------------------------------------------------------------------
   - DOMAIN-SUFFIX,character.ai # Character.AI 智能体对话核心主站
   - DOMAIN-SUFFIX,characterai.io # Character.AI 基础支撑与通信服务域名
   - DOMAIN-SUFFIX,beta.character.ai # Character.AI 测试版 Web 入口
+  - PROCESS-NAME,ai.character.app # Character.AI 官方 Android App 包名
 
   # ----------------------------------------------------------------------------
-  # [OpenAI / ChatGPT] (chatgpt.yaml) - 共 17 条规则
+  # [OpenAI / ChatGPT] (chatgpt.yaml) - 共 19 条规则
   # ----------------------------------------------------------------------------
   - DOMAIN-SUFFIX,chatgpt.com # ChatGPT 网页端主站及服务
   - DOMAIN-SUFFIX,openai.com # OpenAI 官方主站及企业服务
@@ -60,6 +63,8 @@ payload:
   - DOMAIN-SUFFIX,featuregates.org # OpenAI 客户端功能开关与灰度测试 (Statsig)
   - DOMAIN-SUFFIX,statsigapi.net # OpenAI 客户端事件遥测与统计分析
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com # ChatGPT 前端异常日志与性能监控 (Datadog)
+  - PROCESS-NAME,com.openai.chatgpt # ChatGPT 官方 Android App 包名
+  - PROCESS-NAME,ChatGPT # ChatGPT 官方桌面端应用进程名
 
   # ----------------------------------------------------------------------------
   # [Civitai] (civitai.yaml) - 共 2 条规则
@@ -76,27 +81,30 @@ payload:
   - DOMAIN-SUFFIX,dashboard.cohere.com # Cohere 开发者控制台与密钥管理
 
   # ----------------------------------------------------------------------------
-  # [Cursor (Anysphere)] (cursor.yaml) - 共 5 条规则
+  # [Cursor (Anysphere)] (cursor.yaml) - 共 6 条规则
   # ----------------------------------------------------------------------------
   - DOMAIN-SUFFIX,cursor.com # Cursor AI 代码编辑器官方网站
   - DOMAIN-SUFFIX,cursor.sh # Cursor 早期主域名与核心后端接口
   - DOMAIN-SUFFIX,api2.cursor.sh # Cursor 核心代码生成与补全 API
   - DOMAIN-SUFFIX,repo42.cursor.sh # Cursor 远程代码仓库语义索引与嵌入向量检索
   - DOMAIN-SUFFIX,download.todesktop.com # Cursor 桌面客户端安装包下载与更新 CDN
+  - PROCESS-NAME,Cursor # Cursor AI 编辑器桌面端进程名
 
   # ----------------------------------------------------------------------------
-  # [Descript] (descript.yaml) - 共 1 条规则
+  # [Descript] (descript.yaml) - 共 2 条规则
   # ----------------------------------------------------------------------------
   - DOMAIN-SUFFIX,descript.com # Descript AI 音频视频转录与编辑主站
+  - PROCESS-NAME,Descript # Descript 官方桌面端应用进程名
 
   # ----------------------------------------------------------------------------
-  # [ElevenLabs] (elevenlabs.yaml) - 共 2 条规则
+  # [ElevenLabs] (elevenlabs.yaml) - 共 3 条规则
   # ----------------------------------------------------------------------------
   - DOMAIN-SUFFIX,elevenlabs.io # ElevenLabs AI 语音合成与声音克隆官方主站
   - DOMAIN-SUFFIX,api.elevenlabs.io # ElevenLabs 文本转语音与语音转换 API 接口
+  - PROCESS-NAME,io.elevenlabs.readerapp # ElevenLabs Reader 官方 Android App 包名
 
   # ----------------------------------------------------------------------------
-  # [Google AI (Gemini, DeepMind, AI Studio, NotebookLM)] (google.yaml) - 共 15 条规则
+  # [Google AI (Gemini, DeepMind, AI Studio, NotebookLM)] (google.yaml) - 共 17 条规则
   # ----------------------------------------------------------------------------
   - DOMAIN,gemini.google.com # Google Gemini 网页端主应用
   - DOMAIN,bard.google.com # Google Bard 旧版重定向入口
@@ -113,6 +121,8 @@ payload:
   - DOMAIN,alkalimakersuite-pa.clients6.google.com # AI Studio 后端专用 API
   - DOMAIN,content-push.googleapis.com # Gemini 实时内容流式推送服务
   - DOMAIN,waa-pa.clients6.google.com # Google Web Assistant 网页端 AI 辅助服务
+  - PROCESS-NAME,com.google.android.apps.bard # Google Gemini 官方 Android App 包名
+  - PROCESS-NAME,com.google.android.apps.genie # Google AI 智能助手基础服务包名
 
   # ----------------------------------------------------------------------------
   # [Groq] (groq.yaml) - 共 3 条规则
@@ -127,11 +137,12 @@ payload:
   - DOMAIN-SUFFIX,harvey.ai # Harvey 法律领域专业大模型服务主站
 
   # ----------------------------------------------------------------------------
-  # [HeyGen] (heygen.yaml) - 共 3 条规则
+  # [HeyGen] (heygen.yaml) - 共 4 条规则
   # ----------------------------------------------------------------------------
   - DOMAIN-SUFFIX,heygen.com # HeyGen AI 数字人与视频翻译创作平台
   - DOMAIN-SUFFIX,heygen.ai # HeyGen 重定向与相关应用服务
   - DOMAIN-SUFFIX,api.heygen.com # HeyGen 数字人视频生成 API 接口
+  - PROCESS-NAME,com.heygen.app # HeyGen 官方 Android App 包名
 
   # ----------------------------------------------------------------------------
   # [Hugging Face] (huggingface.yaml) - 共 3 条规则
@@ -141,10 +152,11 @@ payload:
   - DOMAIN-SUFFIX,hf.co # Hugging Face 官方短域名与模型权重下载加速入口
 
   # ----------------------------------------------------------------------------
-  # [Inflection AI / Pi] (inflection.yaml) - 共 2 条规则
+  # [Inflection AI / Pi] (inflection.yaml) - 共 3 条规则
   # ----------------------------------------------------------------------------
   - DOMAIN-SUFFIX,pi.ai # Pi 对话式 AI 助手主站
   - DOMAIN-SUFFIX,inflection.ai # Inflection AI 企业官方主站
+  - PROCESS-NAME,ai.inflection.pi # Pi 官方 Android App 包名
 
   # ----------------------------------------------------------------------------
   # [Jasper AI] (jasper.yaml) - 共 2 条规则
@@ -165,15 +177,17 @@ payload:
   - DOMAIN-SUFFIX,cdn.lumalabs.ai # Luma 生成视频与多媒体素材 CDN
 
   # ----------------------------------------------------------------------------
-  # [Meta AI (LLaMA, Imagine)] (meta.yaml) - 共 4 条规则
+  # [Meta AI (LLaMA, Imagine)] (meta.yaml) - 共 6 条规则
   # ----------------------------------------------------------------------------
   - DOMAIN-SUFFIX,meta.ai # Meta AI 助手独立 Web 端主站
   - DOMAIN-SUFFIX,imagine.meta.com # Meta AI 独立图像生成工具 (Imagine with Meta AI)
   - DOMAIN-SUFFIX,ai.meta.com # Meta AI 研究院与开源生态门户
   - DOMAIN-SUFFIX,llama.meta.com # Meta LLaMA 系列大模型官方门户
+  - PROCESS-NAME,com.meta.ai # Meta AI 官方 Android App 包名
+  - PROCESS-NAME,com.facebook.stella # Ray-Ban Meta AI 智能眼镜配套 App 包名
 
   # ----------------------------------------------------------------------------
-  # [Microsoft AI (Copilot, Bing AI, GitHub Copilot, Designer)] (microsoft.yaml) - 共 10 条规则
+  # [Microsoft AI (Copilot, Bing AI, GitHub Copilot, Designer)] (microsoft.yaml) - 共 13 条规则
   # ----------------------------------------------------------------------------
   - DOMAIN-SUFFIX,copilot.microsoft.com # Microsoft Copilot 独立 Web 端应用
   - DOMAIN-SUFFIX,copilot.cloud.microsoft # Microsoft 365 Copilot 企业云端统一入口
@@ -185,6 +199,9 @@ payload:
   - DOMAIN,copilot-proxy.githubusercontent.com # GitHub Copilot 代理转发与流式数据中转服务
   - DOMAIN,origin-tracker.githubusercontent.com # GitHub Copilot 代码引用源追溯服务
   - DOMAIN,copilot-staging.github.com # GitHub Copilot 预发布与测试服务接口
+  - PROCESS-NAME,com.microsoft.copilot # Microsoft Copilot 官方 Android App 包名
+  - PROCESS-NAME,com.microsoft.bing # Microsoft Bing (内置 Copilot) App 包名
+  - PROCESS-NAME,com.microsoft.designer # Microsoft Designer 官方 Android App 包名
 
   # ----------------------------------------------------------------------------
   # [Midjourney] (midjourney.yaml) - 共 3 条规则
@@ -194,13 +211,15 @@ payload:
   - DOMAIN-SUFFIX,cdn.midjourney.com # Midjourney 生成图片与素材分发 CDN
 
   # ----------------------------------------------------------------------------
-  # [Perplexity AI] (perplexity.yaml) - 共 5 条规则
+  # [Perplexity AI] (perplexity.yaml) - 共 7 条规则
   # ----------------------------------------------------------------------------
   - DOMAIN-SUFFIX,perplexity.ai # Perplexity AI 搜索与对话核心主站
   - DOMAIN-SUFFIX,pplx.ai # Perplexity 官方短链与移动端服务
   - DOMAIN-SUFFIX,api.perplexity.ai # Perplexity AI 开放 API 调用接口
   - DOMAIN-SUFFIX,labs.perplexity.ai # Perplexity 实验性大模型测试平台 (Playground)
   - DOMAIN-SUFFIX,cdn.perplexity.ai # Perplexity 前端静态资产加速 CDN
+  - PROCESS-NAME,ai.perplexity.app.android # Perplexity 官方 Android App 包名
+  - PROCESS-NAME,Perplexity # Perplexity 官方桌面端应用进程名
 
   # ----------------------------------------------------------------------------
   # [Phind] (phind.yaml) - 共 1 条规则
@@ -220,10 +239,11 @@ payload:
   - DOMAIN-SUFFIX,app.pinecone.io # Pinecone 控制台与索引管理后台
 
   # ----------------------------------------------------------------------------
-  # [Poe (Quora)] (poe.yaml) - 共 2 条规则
+  # [Poe (Quora)] (poe.yaml) - 共 3 条规则
   # ----------------------------------------------------------------------------
   - DOMAIN-SUFFIX,poe.com # Poe AI 聚合对话平台官方主站
   - DOMAIN-SUFFIX,quoracdn.net # Quora 及 Poe 静态资源加速 CDN
+  - PROCESS-NAME,com.quora.poe # Poe 官方 Android App 包名
 
   # ----------------------------------------------------------------------------
   # [Replicate] (replicate.yaml) - 共 2 条规则
@@ -232,12 +252,13 @@ payload:
   - DOMAIN-SUFFIX,replicate.delivery # Replicate 生成结果与模型文件高速下载 CDN
 
   # ----------------------------------------------------------------------------
-  # [Runway AI] (runway.yaml) - 共 4 条规则
+  # [Runway AI] (runway.yaml) - 共 5 条规则
   # ----------------------------------------------------------------------------
   - DOMAIN-SUFFIX,runway.com # Runway 新版官方主站
   - DOMAIN-SUFFIX,runwayml.com # RunwayML 视频与视觉 AI 生成主站
   - DOMAIN-SUFFIX,app.runwayml.com # Runway 在线视频编辑与生成工作室
   - DOMAIN-SUFFIX,api.runwayml.com # Runway 视频生成开放 API
+  - PROCESS-NAME,com.runwayml.android # Runway 官方 Android App 包名
 
   # ----------------------------------------------------------------------------
   # [Scale AI] (scale.yaml) - 共 2 条规则
@@ -246,18 +267,20 @@ payload:
   - DOMAIN-SUFFIX,dashboard.scale.com # Scale AI 企业控制台
 
   # ----------------------------------------------------------------------------
-  # [Stability AI] (stability.yaml) - 共 3 条规则
+  # [Stability AI] (stability.yaml) - 共 4 条规则
   # ----------------------------------------------------------------------------
   - DOMAIN-SUFFIX,stability.ai # Stability AI 官方门户与研究发布
   - DOMAIN-SUFFIX,dreamstudio.ai # DreamStudio (Stable Diffusion 官方生图平台)
   - DOMAIN-SUFFIX,clipdrop.co # Clipdrop AI 图像编辑与处理工具
+  - PROCESS-NAME,co.arcnet # Clipdrop (Stability AI) 官方 Android App 包名
 
   # ----------------------------------------------------------------------------
-  # [Suno AI] (suno.yaml) - 共 3 条规则
+  # [Suno AI] (suno.yaml) - 共 4 条规则
   # ----------------------------------------------------------------------------
   - DOMAIN-SUFFIX,suno.com # Suno AI 音乐生成主站
   - DOMAIN-SUFFIX,suno.ai # Suno AI 早期主域与重定向入口
   - DOMAIN-SUFFIX,audiocdn.suno.ai # Suno AI 音频生成流式播放与下载 CDN
+  - PROCESS-NAME,com.suno.app # Suno AI 官方 Android App 包名
 
   # ----------------------------------------------------------------------------
   # [Together AI] (together.yaml) - 共 4 条规则

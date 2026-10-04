@@ -17,3 +17,8 @@ payload:
   - DOMAIN,copilot-proxy.githubusercontent.com # GitHub Copilot 代理转发与流式数据中转服务
   - DOMAIN,origin-tracker.githubusercontent.com # GitHub Copilot 代码引用源追溯服务
   - DOMAIN,copilot-staging.github.com # GitHub Copilot 预发布与测试服务接口
+
+  # 客户端 App 包名
+  - PROCESS-NAME,com.microsoft.copilot # Microsoft Copilot 官方 Android App 包名
+  - PROCESS-NAME,com.microsoft.bing # Microsoft Bing (内置 Copilot) App 包名
+  - PROCESS-NAME,com.microsoft.designer # Microsoft Designer 官方 Android App 包名

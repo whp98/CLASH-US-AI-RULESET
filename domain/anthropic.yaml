@@ -13,3 +13,7 @@ payload:
   # 客户端遥测、合规与数据上报
   - DOMAIN-SUFFIX,statsig.anthropic.com # Anthropic 客户端灰度开关与配置下发
   - DOMAIN-SUFFIX,usefathom.com # Claude 隐私无痕流量分析服务
+
+  # 客户端 App 包名与进程名
+  - PROCESS-NAME,com.anthropic.claude # Claude 官方 Android App 包名
+  - PROCESS-NAME,Claude # Claude 官方桌面端应用进程名

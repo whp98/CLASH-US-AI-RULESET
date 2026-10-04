@@ -24,3 +24,7 @@ payload:
   - DOMAIN,alkalimakersuite-pa.clients6.google.com # AI Studio 后端专用 API
   - DOMAIN,content-push.googleapis.com # Gemini 实时内容流式推送服务
   - DOMAIN,waa-pa.clients6.google.com # Google Web Assistant 网页端 AI 辅助服务
+
+  # 客户端 App 包名
+  - PROCESS-NAME,com.google.android.apps.bard # Google Gemini 官方 Android App 包名
+  - PROCESS-NAME,com.google.android.apps.genie # Google AI 智能助手基础服务包名

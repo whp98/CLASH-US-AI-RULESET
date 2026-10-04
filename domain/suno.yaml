@@ -6,3 +6,6 @@ payload:
 
   # 音频流式分发与静态资源 CDN
   - DOMAIN-SUFFIX,audiocdn.suno.ai # Suno AI 音频生成流式播放与下载 CDN
+
+  # 客户端 App 包名
+  - PROCESS-NAME,com.suno.app # Suno AI 官方 Android App 包名

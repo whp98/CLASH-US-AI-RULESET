@@ -5,3 +5,6 @@ payload:
   - DOMAIN-SUFFIX,runwayml.com # RunwayML 视频与视觉 AI 生成主站
   - DOMAIN-SUFFIX,app.runwayml.com # Runway 在线视频编辑与生成工作室
   - DOMAIN-SUFFIX,api.runwayml.com # Runway 视频生成开放 API
+
+  # 客户端 App 包名
+  - PROCESS-NAME,com.runwayml.android # Runway 官方 Android App 包名

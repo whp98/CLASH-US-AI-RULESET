@@ -4,3 +4,6 @@ payload:
   - DOMAIN-SUFFIX,heygen.com # HeyGen AI 数字人与视频翻译创作平台
   - DOMAIN-SUFFIX,heygen.ai # HeyGen 重定向与相关应用服务
   - DOMAIN-SUFFIX,api.heygen.com # HeyGen 数字人视频生成 API 接口
+
+  # 客户端 App 包名
+  - PROCESS-NAME,com.heygen.app # HeyGen 官方 Android App 包名

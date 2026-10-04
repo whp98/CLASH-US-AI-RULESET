@@ -6,3 +6,6 @@ payload:
   # DreamStudio 与生图平台
   - DOMAIN-SUFFIX,dreamstudio.ai # DreamStudio (Stable Diffusion 官方生图平台)
   - DOMAIN-SUFFIX,clipdrop.co # Clipdrop AI 图像编辑与处理工具
+
+  # 客户端 App 包名
+  - PROCESS-NAME,co.arcnet # Clipdrop (Stability AI) 官方 Android App 包名

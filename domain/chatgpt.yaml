@@ -26,3 +26,7 @@ payload:
   - DOMAIN-SUFFIX,featuregates.org # OpenAI 客户端功能开关与灰度测试 (Statsig)
   - DOMAIN-SUFFIX,statsigapi.net # OpenAI 客户端事件遥测与统计分析
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com # ChatGPT 前端异常日志与性能监控 (Datadog)
+
+  # 客户端 App 包名与进程名
+  - PROCESS-NAME,com.openai.chatgpt # ChatGPT 官方 Android App 包名
+  - PROCESS-NAME,ChatGPT # ChatGPT 官方桌面端应用进程名
