@@ -58,6 +58,8 @@
 payload:
   - DOMAIN-SUFFIX,chatgpt.com # ChatGPT 网页端主站及服务
   - DOMAIN-SUFFIX,oaistatic.com # ChatGPT 前端静态资源与样式分发 CDN
+  - PROCESS-NAME,com.openai.chatgpt # ChatGPT 官方 Android App 包名
+  - PROCESS-NAME,ChatGPT # ChatGPT 官方桌面端应用进程名
 ```
 
 ## 使用指南
