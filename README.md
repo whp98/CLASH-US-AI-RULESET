@@ -101,7 +101,7 @@ rule-providers:
     type: http
     behavior: classical
     path: ./ruleset/US-AI.yaml
-    url: "https://raw.githubusercontent.com/<username>/CLASH-US-AI-RULESET/main/US-AI.yaml"
+    url: "https://raw.githubusercontent.com/whp98/CLASH-US-AI-RULESET/main/US-AI.yaml"
     interval: 86400
 
 rules:
